@@ -1,0 +1,14 @@
+type ProductItem{
+    sku: String!
+    name: String!
+    price: Int!
+    productType: String!
+    size: Int
+    weight: String
+    height: Int
+    width: Int
+    length: Int
+}
+type Query {
+   allProductItems: [ProductItem!]
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Add product</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header">
+        <div class="header-element">
+          <h1>Product Add</h1>
+        </div>
+        <div class="header-element">
+          <div class="header-element__buttons">
+            <button class="button-control">
+              Save
+            </button>
+            <button class="button-control">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="add-product">
+        <div class="add-item">
+          <div class="add-item__caption">
+            SKU
+          </div>
+          <div class="add-item__input">
+            <input type="text" name="sku" id="sku" required>
+          </div>
+        </div>
+        <div class="add-item">
+          <div class="add-item__caption">
+            Name
+          </div>
+          <div class="add-item__input">
+            <input type="text" name="name" id="name" required>
+          </div>
+        </div>
+        <div class="add-item">
+          <div class="add-item__caption">
+            Price ($)
+          </div>
+          <div class="add-item__input">
+            <input type="text" name="price" id="price" required>
+          </div>
+        </div>
+        <div class="add-item">
+          <div class="add-item__caption">
+            Type Switcher
+          </div>
+          <div class="add-item__input">
+            <select id='productType'>
+              <option value="DVD">DVD</option>
+              <option value="Book">Book</option>
+              <option value="Furniture">Furniture</option>
+            </select>
+          </div>
+        </div>
+        <div class="add-item">
+          <span>Please, provide size</span>
+          <div class="add-item__caption">
+            Size (MB)
+          </div>
+          <div class="add-item__input">
+            <input type="number" name="size" id="size" required>
+          </div>
+        </div>
+        <div class="add-item">
+          <span>Please, provide weight</span>
+          <div class="add-item__caption">
+            Weight (Kg)
+          </div>
+          <div class="add-item__input">
+            <input type="number" name="weight" id="weight" required>
+          </div>
+        </div>
+        <div class="add-item">
+          <span>Please, provide dimensions</span>
+          <div class="add-item__caption">
+            Height (CM)
+          </div>
+          <div class="add-item__input">
+            <input type="number" name="height" id="height" required>
+          </div>
+          <div class="add-item__caption">
+            Width (CM)
+          </div>
+          <div class="add-item__input">
+            <input type="number" name="width" id="width" required>
+          </div>
+          <div class="add-item__caption">
+            Length (CM)
+          </div>
+          <div class="add-item__input">
+            <input type="number" name="length" id="length" required>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="copirate">
+          Scandiweb Test assignment
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="app"></div>
+
+</body>
+
+</html>
